@@ -1,0 +1,55 @@
+@layer base, utils, components;
+
+@import "@webtui/css";
+@import "@webtui/plugin-nf";
+@import "@webtui/theme-catppuccin";
+
+@layer base {
+	:root {
+		--font-size: 18px;
+		--font-family: "IBM Plex Mono", monospace;
+	}
+}
+
+body {
+	margin: 2ch;
+}
+
+/* body container
+ * Align into 2 column when in big screen
+ * Otherwise collapse into one long strip
+ * */
+.body-container {
+	@media (min-width: 600px) {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 1ch;
+		column-count: 2;
+	}
+
+	width: 100%;
+}
+
+.body-left-side {
+	@media (min-width: 600px) {
+		width: 40%;
+	}
+
+	@media (min-width: 1000px) {
+		width: 20%;
+	}
+}
+
+.body-right-side {
+	@media (min-width: 600px) {
+		width: 60%;
+	}
+
+	@media (min-width: 100px) {
+		width: 80%;
+	}
+}
+
+.body-box {
+	padding: 3ch;
+}

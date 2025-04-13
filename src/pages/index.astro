@@ -1,0 +1,69 @@
+---
+import "../styles/stylesheet.css";
+---
+
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./stylesheet.css" />
+
+  <title>PCSite</title>
+
+  <body>
+    <div box-="square" style="text-align: center;">
+      <h1>
+        <span> This is </span>
+        <span style="color: var(--teal, #89dceb)"> PCS </span>
+        <span> Site </span>
+      </h1>
+    </div>
+    <div class="body-container">
+      <div class="body-left-side">
+        <div box-="square contain:!top">
+          <p
+            style="background-color: var(--background0); width: fit-content; padding-left: 1ch; padding-right: 1ch;"
+          >
+            CONTENTS
+          </p>
+          <ol style="padding-inline-start: 2ch">
+            <li>About Me <br /></li>
+            <li>Tech Stacks <br /></li>
+            <li>Projects <br /></li>
+            <li>Contact <br /></li>
+            <li>Resume <br /></li>
+            <li>Blog <br /></li>
+            <li>Social Media <br /></li>
+            <li>Other <br /></li>
+          </ol>
+        </div>
+      </div>
+      <div class="body-right-side">
+        <div box-="square" class="body-box">
+          <h2 style="text-decoration: underline;">ABOUT ME</h2>
+          <p>
+            Welcome to my personal website! <br />
+            I am a student from *************, studying in the *********. <br />
+            This website is where I display things about myself.
+          </p>
+          <br />
+          <h2 style="text-decoration: underline;">TOPICS</h2>
+          <h3>Tech Stacks</h3>
+          <ul>
+            Languages
+            <ul>
+              <li>HTML/CSS</li>
+              <li>C, C++</li>
+              <li>JavaScript, TypeScript</li>
+              <li>SQL (Postgres)</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
